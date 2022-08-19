@@ -4,19 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício formulário</title>
+    <title>Meu portal de notícias</title>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
-    <h1>Formulário</h1>
-    <form>
-        <label for="nome">Nome</label>
-        <input type="text" placeholder="Nome completo" id="nome" /> <br /> 
-        <label for="email">Email</label>
-        <input type="email" placeholder="Email" id="email" /> <br />
-        <label for=senha>Senha</label>
-        <input type="password" placeholder="Senha" id="senha" /> <br />
-        <br/>
-        <button type="reset">Enviar</button>
-    </form>
+    <header>
+        <div class="container">
+            <h1>Meu portal de notícias</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#esportes" title="Ir para a sessão de esportes">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="#economia" title="Ir para a sessão de economia">Economia</a>
+                    </li>
+                    <li>
+                        <a href="#tecnologia" title="Ir para a sessão de tecnologia">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="#entretenimento" title="Ir para a sessão de entretenimento">Entretenimento</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="esportes">
+        <div class="container">
+            <h2>Esportes</h2>
+            <div class="articles">
+                <article>
+                    <img src="./images/futebol.jpg" alt="futebol" />
+                    <header>
+                        <time class="creation-date">13/07/2022 às 17:40</time>
+                    </header>
+                    <h3>Grande clássico na noite de hoje</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, possimus doloremque minima itaque voluptatibus consectetur iste, eligendi eius temporibus animi, similique ad quidem repellat placeat laboriosam amet error porro tempora?</p>
+                    <a href="#" title="Leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/basquete.jpg" alt="basquete" />
+                    <header>
+                        <time class="creation-date">12/08/2022 às 13:45</time>
+                    </header>
+                    <h3>Noite de NBA</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati incidunt ullam praesentium harum optio, nam fugit quaerat vel dignissimos, unde, quis consequuntur in repellendus necessitatibus dolorem tenetur fuga! Ducimus, ea!
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/atletismo.png" alt="atletismo" />
+                    <header>
+                        <time class="creation-date">30/11/2022 às 8:09</time>
+                    </header>   
+                    <h3>Chance de medalha</h3> 
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, consectetur veniam voluptatum praesentium amet modi dicta aperiam fugiat placeat itaque voluptatem. Nam quod, dolore assumenda mollitia nesciunt modi ex ullam.
+                    </p> 
+                    <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/atletismo.png" alt="atletismo" />
+                    <header>
+                        <time class="creation-date">30/11/2022 às 8:09</time>
+                    </header>   
+                    <h3>Chance de medalha</h3> 
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, consectetur veniam voluptatum praesentium amet modi dicta aperiam fugiat placeat itaque voluptatem. Nam quod, dolore assumenda mollitia nesciunt modi ex ullam.
+                    </p> 
+                    <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="economia">
+        <div class="container">
+            <h2>Economia</h2>
+            <div class="articles">
+                <article>
+                    <img src="./images/bolsa-de-valores.jpg" alt="bolsa de valores" />
+                    <header>
+                        <time class="creation-date">04/05/2022 às 13:30</time>
+                    </header>
+                    <h3>Bolsa em alta</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iste, distinctio alias delectus laborum enim non aliquam hic facilis odit rem minima vel iure. Possimus quis aliquam placeat illo perferendis.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/crypto.jpg" alt="crypto moedas" />
+                    <header>
+                        <time class="creation-date">05/04/2022 às 10:09</time>
+                    </header>
+                    <h3>Crypto moedas são confiáveis?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a pariatur tempora voluptates ipsum perspiciatis recusandae voluptate quae odio sapiente illo vel officiis magnam voluptatibus, et corrupti? Nobis, veritatis ut?
+                    </p>
+                    <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/dinheiro.jpg" alt="dinheiro" />
+                    <header>
+                        <time class="creation-date">15/05/2022 às 04:00</time>
+                    </header>
+                        <h3>Como guardar seu dinheiro</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quidem minus! Perferendis ut omnis id, veritatis nam fugit quibusdam eos nihil labore at laborum, modi molestias recusandae, qui quasi in?
+                        </p>
+                        <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="tecnologia">
+        <div class="container">
+            <h2>Tecnologia</h2>
+            <div class="articles">
+                <article>
+                    <img src="./images/5G.jpeg" alt="5g" />
+                    <header>
+                        <time class="creation-date">05/05/2022 às 16:30</time>
+                    </header>
+                    <h3>5G chega ao brasil</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iste, distinctio alias delectus laborum enim non aliquam hic facilis odit rem minima vel iure. Possimus quis aliquam placeat illo perferendis.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/celular.jpg" alt="celular" />
+                    <header>
+                        <time class="creation-date">10/04/2022 às 09:09</time>
+                    </header>
+                    <h3>Black Friday</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a pariatur tempora voluptates ipsum perspiciatis recusandae voluptate quae odio sapiente illo vel officiis magnam voluptatibus, et corrupti? Nobis, veritatis ut?
+                    </p>
+                    <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/note.jpg" alt="notebook" />
+                    <header>
+                        <time class="creation-date">24/05/2022 às 04:00</time>
+                    </header>
+                        <h3>Lançamentos E3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quidem minus! Perferendis ut omnis id, veritatis nam fugit quibusdam eos nihil labore at laborum, modi molestias recusandae, qui quasi in?
+                        </p>
+                        <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="entretenimento">
+        <div class="container">
+            <h2>Entretenimento</h2>
+            <div class="articles">
+                <article>
+                    <img src="./images/theboys.jpg" alt="the boys" />
+                    <header>
+                        <time class="creation-date">04/15/2022 às 17:30</time>
+                    </header>
+                    <h3>Nova temporada The Boys</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iste, distinctio alias delectus laborum enim non aliquam hic facilis odit rem minima vel iure. Possimus quis aliquam placeat illo perferendis.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/starwars.jpg" alt="star wars" />
+                    <header>
+                        <time class="creation-date">05/04/2022 às 10:09</time>
+                    </header>
+                    <h3>Novo filme em produção</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a pariatur tempora voluptates ipsum perspiciatis recusandae voluptate quae odio sapiente illo vel officiis magnam voluptatibus, et corrupti? Nobis, veritatis ut?
+                    </p>
+                    <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+                <article>
+                    <img src="./images/netflix.jpg" alt="netflix" />
+                    <header>
+                        <time class="creation-date">15/05/2022 às 04:00</time>
+                    </header>
+                        <h3>Fim da netflix?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quidem minus! Perferendis ut omnis id, veritatis nam fugit quibusdam eos nihil labore at laborum, modi molestias recusandae, qui quasi in?
+                        </p>
+                        <a href="#" title="leia a notícia completa">Leia mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

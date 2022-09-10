@@ -2,55 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    background-color: rgb(236, 236, 236);
+    font-family: Roboto, sans-serif;
 }
 
 .container {
-    margin: 80px auto;
     max-width: 640px;
     width: 100%;
+    margin: 0px auto;
 }
 
-form {
-    margin-top: 40px;
-}
-
-input, button {
-    display: block;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 100%;
+header {
+    margin-top: 80px;
 }
 
 h1 {
-    color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
-button {
-    border: none;
-    background-color: blueviolet;
+form {
+    display: flex;
+    margin: 40px auto;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+form input {
+    background-color: white;
+    font-size: 24px;
+    padding: 8px;
+    width: 500px;
+    border-color:rgb(71, 71, 71);
+}
+
+form button {
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
     color: white;
-    font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase;
-    width: 100%;
-    margin-top: 32px;
+    border: none;
 }
 
-button:hover {
+form button:hover {
+    font-size: 24px;
+    padding: 8px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.lista {
+    max-width: 320px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+li {
     cursor: pointer;
 }
 
-.message-error {
-    background-color: red;
-    padding: 16px;
-    color: white;
-    display: none;
-}
-
-.message {
-    background-color: green;
-    padding: 16px;
-    color: white;
-    display: none;
+.risco {
+    text-decoration: line-through;
 }

@@ -1,30 +1,21 @@
-const form = document.getElementById('form');
-let a = document.getElementById('numero-a');
-let b = document.getElementById('numero-b');
-const containerMensagem = document.querySelector('.message');
-const containerMensagemErro = document.querySelector('.message-error');
+$(document).ready(function(){
 
-form.addEventListener('submit',function(e) {
-    e.preventDefault();
+    $('form').on('submit', function(e){
+        e.preventDefault();
 
-    const mensagemPositiva = `O número ${b.value} é maior que ${a.value}!!!`;
-    const mensagemNegativa = `O número ${b.value} não é maior que ${a.value}, tente de novo.`;
+        const tarefa = $('#tarefa').val();
+        const novaTarefa = $(`<li onClick="riscar(${tarefa.split(" ").join("")})" id="${tarefa.split(" ").join("")}" ></li>`);
+        $(novaTarefa).html(tarefa);
+        $(novaTarefa).appendTo("ul");
 
-    if (b.value > a.value) {
-        containerMensagem.innerHTML = mensagemPositiva;
-        containerMensagem.style.display = 'block';
-        containerMensagemErro.style.display = 'none';
+        $('#tarefa').val('');
+        console.log(tarefa);
+    });
 
-        a.value = '';
-        b.value = '';
-    } else {
-        containerMensagemErro.innerHTML = mensagemNegativa;
-        containerMensagemErro.style.display = 'block';
-        containerMensagem.style.display = 'none';
+});
 
-        a.value = '';
-        b.value = '';
-    }
-})
+function riscar(x){
+    idParariscar = x.id;
 
-
+    tarefaParaRiscar = document.getElementById(`${idParariscar}`).classList.add('risco');
+};

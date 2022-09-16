@@ -1,71 +1,62 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background-color: rgb(236, 236, 236);
-    font-family: Roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
 }
 
 .container {
+    background-color: rgb(240, 240, 240);
+    box-shadow: 2px 2px 10px rgb(153, 153, 153);
+    border-radius: 16px;
+    margin: 100px auto;
     max-width: 640px;
     width: 100%;
-    margin: 0px auto;
+    padding: 32px;
+    align-items: center;
 }
 
 header {
-    margin-top: 80px;
-}
-
-h1 {
-    font-size: 50px;
-    text-align: center;
     margin-bottom: 16px;
+    color: rgb(61, 61, 61);
 }
 
-form {
-    display: flex;
-    margin: 40px auto;
-    max-width: 100%;
-    justify-content: space-around;
+.form-campo {
+    margin-bottom: 8px;
 }
 
-form input {
-    background-color: white;
-    font-size: 24px;
+.form-campo label {
+    display:block;
+    color: rgb(94, 94, 94);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-campo input {
     padding: 8px;
-    width: 500px;
-    border-color:rgb(71, 71, 71);
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
-form button {
-    font-size: 24px;
+button {
     padding: 8px;
-    cursor: pointer;
-    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(61, 61, 61);
     color: white;
     font-weight: bold;
-    border: none;
-}
-
-form button:hover {
-    font-size: 24px;
-    padding: 8px;
-    background-color: rgb(71, 71, 71);
-    color: white;
-    font-weight: bold;
-    border: none;
-}
-
-.lista {
-    max-width: 320px;
-    margin: 0 auto;
-    font-size: 20px;
-}
-
-li {
+    font-size: 16px;
+    width: 100px;
     cursor: pointer;
 }
 
-.risco {
-    text-decoration: line-through;
+button:hover {
+    
+    background-color: black;
 }

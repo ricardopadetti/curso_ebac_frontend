@@ -1,0 +1,16 @@
+.container {
+    margin-top: 24px;
+    max-width: 1024px;
+}
+
+form {
+    margin-top: 24px;
+}
+
+form input {
+    margin-bottom: 8px;
+}
+
+form button {
+    margin-top: 8px;
+}
